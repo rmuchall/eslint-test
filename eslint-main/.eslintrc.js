@@ -1,20 +1,28 @@
 module.exports = {
-    "env": {
+    root: true,
+    env: {
         "node": true,
         "commonjs": true,
         "es2017": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": 12
+    globals: {
+        process: false
     },
-    "plugins": [
+    extends: [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    parser: "@typescript-eslint/parser",
+    parserOptions: {
+        project: "./tsconfig.json"
+    },
+    plugins: [
         "@typescript-eslint"
     ],
-    "rules": {
+    ignorePatterns: [
+        ".eslintrc.js"
+    ],
+    rules: {
     }
 };
