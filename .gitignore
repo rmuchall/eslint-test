@@ -1,0 +1,5 @@
+# Node modules
+/eslint-main/node_modules
+
+# Webstorm
+/eslint-main/.idea/workspace.xml
