@@ -24,5 +24,8 @@ module.exports = {
         ".eslintrc.js"
     ],
     rules: {
+        // Style
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"]
     }
 };
